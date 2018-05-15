@@ -8,18 +8,58 @@
 /* BASIC SELECTORS */
 
 /* Tag selectors */
+h1 {
+  color: tomato;
+  background-color: yellow;
+}
 
+h1 {
+  color: lightseagreen;
+}
 
 /* Class selectors */
-
+.hero {
+  border: 5px dotted blue;
+  color: purple;
+}
 
 /* ID selectors */
+#hero-unit {
+  background-color: green;
+  color: #660099;
+}
 
+#superhero {
+  color: white;
+}
 
+#field-url {
+  background-color: red;
+}
+
+#field-url:focus {
+  background-color: yellow;
+}
 
 /* ADVANCED SELECTORS */
 
 /* Combining selectors */
+h1.hero.super.cool {
+  font-size: 50px;
+}
 
+/* Spaces denote child selectors */
+#hero-unit .hero p {
+  background-color: darkgoldenrod;
+}
+
+/* The > denotes direct descendant selector */
+#hero-unit .hero > p {
+  background-color: darkgoldenrod;
+}
 
 /* Pseudo-selectors */
+#hero-unit:hover {
+  border: 10px solid red;
+  cursor: pointer;
+}
