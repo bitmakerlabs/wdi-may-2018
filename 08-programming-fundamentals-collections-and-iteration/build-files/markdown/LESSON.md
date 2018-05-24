@@ -93,7 +93,7 @@ for: alexa readme slides
 
 ## Documentation
 
-[https://ruby-doc.org/core-2.5.1/Array.html](https://ruby-doc.org/core-2.5.1/Array.html)
+[https://ruby-doc.org/core/Array.html](https://ruby-doc.org/core/Array.html)
 
 Here you'll find a list of useful array methods and how to use them.
 
@@ -147,13 +147,13 @@ When looking up documentation on arrays, you'll want to look at both the Array d
 
 ### Array docs
 
-[https://ruby-doc.org/core-2.5.1/Array.html](https://ruby-doc.org/core-2.5.1/Array.html)
+[https://ruby-doc.org/core/Array.html](https://ruby-doc.org/core/Array.html)
 
 --
 
 ### Enumerable docs
 
-[https://ruby-doc.org/core-2.5.1/Enumerable.html](https://ruby-doc.org/core-2.5.1/Enumerable.html)
+[https://ruby-doc.org/core/Enumerable.html](https://ruby-doc.org/core/Enumerable.html)
 
 ---
 
@@ -725,7 +725,7 @@ your_array.length
 
 --
 
-Look at the [array documentation](https://ruby-doc.org/core-2.5.1/Array.html) and experiment with some of the other methods.
+Look at the [array documentation](https://ruby-doc.org/core/Array.html) and experiment with some of the other methods.
 
 ---
 
@@ -759,9 +759,9 @@ for: alexa readme slides
 
 ## Documentation
 
-[https://ruby-doc.org/core-2.5.1/Hash.html](https://ruby-doc.org/core-2.5.1/Hash.html)
+[https://ruby-doc.org/core/Hash.html](https://ruby-doc.org/core/Hash.html)
 
-Notice that Hashes include `Enumerable`, so you'll need to consult that [documentation](https://ruby-doc.org/core-2.5.1/Enumerable.html) too.
+Notice that Hashes include `Enumerable`, so you'll need to consult that [documentation](https://ruby-doc.org/core/Enumerable.html) too.
 
 ---
 
@@ -1913,7 +1913,7 @@ names_that_start_with_c # ["Cox", "Chang"]
 
 for: alexa readme slides
 
-Checkout https://ruby-doc.org/core-2.5.1/Enumerable.html for even more iterative methods
+Checkout https://ruby-doc.org/core/Enumerable.html for even more iterative methods
 
 
 ---
@@ -2182,17 +2182,17 @@ for: alexa readme slides
 
 ### Ruby Array Class Documentation
 
-[https://ruby-doc.org/core-2.5.1/Array.html](https://ruby-doc.org/core-2.5.1/Array.html)
+[https://ruby-doc.org/core/Array.html](https://ruby-doc.org/core/Array.html)
 
 --
 
 ### Ruby Hash Class Documentation
 
 
-[https://ruby-doc.org/core-2.5.1/Hash.html](https://ruby-doc.org/core-2.5.1/Hash.html)
+[https://ruby-doc.org/core/Hash.html](https://ruby-doc.org/core/Hash.html)
 
 --
 
 ### Ruby Enumerable Module Documentation
 
-[https://ruby-doc.org/core-2.5.1/Enumerable.html](https://ruby-doc.org/core-2.5.1/Enumerable.html)
+[https://ruby-doc.org/core/Enumerable.html](https://ruby-doc.org/core/Enumerable.html)
