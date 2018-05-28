@@ -1,0 +1,37 @@
+
+Advantages of OOP
+
+1) Encapsulation
+
+  - Allows to CLASSIFY concepts
+
+
+2) Information Hiding
+
+  - State is PRIVATE
+  - Behaviour is used to access State
+
+3) Abstraction
+
+  - Internals of an object is irrelevant
+  - You just have to know how it works
+
+
+
+Classification
+
+  - definition: Assign something to a particular class
+
+*Class*: "House"
+
+*Instance*: "16 Elm St", "22 Oak St"
+
+
+
+@ ---> "Instance Variable"
+
+
+Type of Object |   State                |  Behaviour
+---------------+------------------------+-------------------------
+Instance       | Instance Variables (@) |  Instance Method (def)
+XXXXX          | XXXXX                  |  XXXXX
