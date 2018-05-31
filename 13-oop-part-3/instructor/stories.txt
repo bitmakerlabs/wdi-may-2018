@@ -1,0 +1,32 @@
+MUST HAVE
+-xxx As a user, I should be able to see a list of contacts, so that I can choose one to call
+-xxx As a user, I should be able to add a contact
+-xxx As a user, I should be able to find a contact
+-xxx As a user, I should be able to see the details of a contact
+-xxx As a user, I should be able to exit from the app
+- As a user, I should be able to edit a contact
+- As a user, I should be able to remove a contact
+- As a user, I should be able to add an email address to a contact
+- As a user, I should be able to add ... to a contact
+
+SHOULD HAVE
+- As a user, I should be able to add a category
+- As a user, I should be able to edit a category
+- As a user, I should be able to delete a category
+
+COULD HAVE
+
+- As a user, I should be able to sort contacts by last name
+- As a user, I should be able to favourite a contact
+- As a user, I should be able to add a contact to a category
+- As a user, I should be able to search for a contact
+- As a user, I should be able to call a contact
+
+WONT HAVE
+- As a user, I should be able to merge contacts
+- As a user, I should be able to export contacts
+- As a user, I should be able to import contacts
+- As a user, I should be able to block a contact
+- As a user, I should be able to add a photo to a contact
+- As a user, I should be able to remove a photo to a contact
+- As a user, I should be able to replace a photo to a contact

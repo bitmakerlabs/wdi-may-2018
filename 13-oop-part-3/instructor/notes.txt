@@ -1,0 +1,5 @@
+
+   Object              |  State                   |  Behaviour
+-----------------------+--------------------------+-----------------------------
+   Instance            |  Instance Variables (@)  |  Instance Methods (def x)
+   Class               |  Class Variables (@@)    |  Class Methods (def self.x)
