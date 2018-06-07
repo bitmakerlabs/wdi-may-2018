@@ -1,0 +1,10 @@
+
+---------------------------------------+--------------------------------------------
+               Request                 |            Response
+---------------------------------------+--------------------------------------------
+Request Line   | Header   | Body       | Status Code | Header     | Body
+---------------+----------+------------+-------------+------------+-----------------
+GET  + url     |     Y    |   N        |   Y         |    Y       |   Y             |  (R)ead
+POST + url     |     Y    |   Y        |   Y         |    Y       |   Sometimes     |  (C)reate
+PATCH/PUT + url|     Y    |   Y        |   Y         |    Y       |   Sometimes     |  (U)pdate
+DELETE + url   |     Y    |   N        |   Y         |    Y       |   Sometimes     |  (D)elete
