@@ -23,9 +23,9 @@ get '/recipes' do
   @title = 'Recipes'
 
   @recipes = {
-    1 => 'Avocado Sushi',
-    2 => 'BBQ Ribs',
-    3 => 'Gluten Free Cookies'
+    '1' => 'Avocado Sushi',
+    '2' => 'BBQ Ribs',
+    '3' => 'Gluten Free Cookies'
   }
 
   erb :recipes
@@ -34,6 +34,12 @@ end
 get '/recipes/:id' do
 
   @id = params[:id]
+
+  @recipes = {
+    '1' => 'Avocado Sushi',
+    '2' => 'BBQ Ribs',
+    '3' => 'Gluten Free Cookies'
+  }
 
   erb :recipe
 end
