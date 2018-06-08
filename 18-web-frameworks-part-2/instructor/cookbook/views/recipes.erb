@@ -1,1 +1,9 @@
 <h1>Recipes</h1>
+
+<ul>
+  <% @recipes.each do |id, name| %>
+    <li>
+      <%= name %> (<%= id %>)
+    </li>
+  <% end %>
+</ul>
