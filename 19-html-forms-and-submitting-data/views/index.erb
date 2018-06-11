@@ -9,38 +9,86 @@
 <form class="new-film" action="/films" method="post">
   <div>
     <!-- input type: text -->
+    <label for="film-title">Title:</label>
+    <input name="title" id="film-title" type="text" placeholder="e.g. Moonlight">
   </div>
 
   <div>
+    <!-- <input type="date">
+    <input type="time">
+    <input type="email">
+    <input type="tel">
+    <input type="url">
+    <input type="color">
+    <input type="number">
+    <input type="search">
+    <input type="range"> -->
     <!-- input types: date / time / email / tel / url / color / range / number / search -->
   </div>
 
   <div>
     <!-- textarea -->
+    <label for="film-description">Description:</label>
+    <textarea id="film-description" name="description" placeholder="e.g. Once upon a time..." ></textarea>
   </div>
 
   <div>
   <!-- input radio -->
+    <fieldset>
+      <legend>Rating</legend>
+
+      <label for="film-1-star">
+        <span>1 star</span>
+        <input id="film-1-star" name="rating" value="1" type="radio">
+      </label>
+      <label for="film-2-stars">
+        <span>2 stars</span>
+        <input id="film-2-stars" name="rating" value="2" type="radio">
+      </label>
+
+      <label for="film-3-stars">
+        <span> 3 stars </span>
+        <input id="film-3-stars" name="rating" value="3" type="radio">
+      </label>
+  </fieldset>
   </div>
 
   <div>
   <!-- input checkbox -->
+  <label for="film-available">Film in library?</label>
+  <input id="film-available" value="1" type="checkbox" name="available">
   </div>
 
 
   <div>
     <!-- select / option -->
+    <label for="film-country">Country</label>
+    <select name="country" id="film-country">
+      <option value="">Please select a country</option>
+      <option value="CA">Canada</option>
+      <option value="US">United States</option>
+      <option value="GB">United Kingdom</option>
+      <option value="JP">Japan</option>
+    </select>
   </div>
 
 
   <div>
     <!-- file -->
+    <!-- <input type="file"> -->
   </div>
 
   <!-- hidden -->
+  <!-- <input type="hidden" name="loyalty-points" value="8437594387593847"> -->
 
   <div>
     <!-- input submit / button -->
+    <!-- <input type="submit" value="Go make a film!"> -->
+    <button type="submit">
+    Go make a film!
+      <img src="http://placebear.com/100/200" alt="a bear">  
+    </button>
+
   </div>
 
 </form>
