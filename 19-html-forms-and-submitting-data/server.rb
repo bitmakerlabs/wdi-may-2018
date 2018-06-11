@@ -11,7 +11,20 @@ get '/films' do
 end
 
 post '/films' do
-  "POST request: #{params}"
+  user_title = params[:title]
+  user_description = params[:description]
+  user_rating = params[:rating]
+  user_available = params[:available]
+  user_country = params[:country]
+
+  Film.create(rating: user_rating,
+  title: user_title,
+  description: user_description,
+  country: user_country,
+  available: user_available
+  )
+
+  redirect to('/')
 end
 
 put '/films' do
@@ -21,3 +34,9 @@ end
 delete '/films' do
   "DELETE request: #{params}"
 end
+
+
+
+
+
+

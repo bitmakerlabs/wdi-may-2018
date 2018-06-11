@@ -7,6 +7,8 @@
 
 <h2>New Film</h2>
 <form class="new-film" action="/films" method="post">
+  <!-- this would be the workaround if we wanted to generate a put, patch, or delete request: -->
+  <!-- <input type="hidden" name="_method" value="delete"> -->
   <div>
     <!-- input type: text -->
     <label for="film-title">Title:</label>
@@ -86,7 +88,7 @@
     <!-- <input type="submit" value="Go make a film!"> -->
     <button type="submit">
     Go make a film!
-      <img src="http://placebear.com/100/200" alt="a bear">  
+      <img src="http://placebear.com/100/200" alt="a bear">
     </button>
 
   </div>
