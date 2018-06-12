@@ -1,0 +1,12 @@
+Model name is always SINGULAR, with first letter upcased: Film, Contact
+DB table name is always PLURAL and lowercase: films, contacts
+
+Controller name is always PLURAL: FilmsController, ContactsController
+
+
+
+Thing           | S/P | Example Name       + File Name Example
+----------------+-----+--------------------+-------------------
+Model name      | S   | Product            | product.rb
+Database table  | P   | products           | N/A
+Controller name | P   | ProductsController | products_controller.rb
