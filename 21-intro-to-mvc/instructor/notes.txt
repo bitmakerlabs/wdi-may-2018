@@ -1,3 +1,6 @@
+MVC Diagram:
+https://srikantmahapatra.files.wordpress.com/2013/11/mvc1.png
+
 Model name is always SINGULAR, with first letter upcased: Film, Contact
 DB table name is always PLURAL and lowercase: films, contacts
 
