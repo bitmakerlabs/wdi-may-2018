@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
   root                     to: 'rides#index'
   resources :rides
+  # resources :products
+  # resources :users
+  resources :foobars
 
   # get    'rides',          to: 'rides#index'
   # get    'rides/new',      to: 'rides#new'
