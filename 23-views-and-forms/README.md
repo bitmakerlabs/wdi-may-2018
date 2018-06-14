@@ -9,7 +9,7 @@ Today we'll learn the various ways to create a form in Rails.
 3. Using form helpers on your templates to make your form
   - lesson break halfway through, after form_for
 4. Gathering data from your form in your controller
-5. Strong parameters
+5. Partial Views
 
 
 ## READ THE DOCS - quick reminder!
