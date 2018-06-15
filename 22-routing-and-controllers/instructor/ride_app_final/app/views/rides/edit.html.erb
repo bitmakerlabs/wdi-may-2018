@@ -1,6 +1,6 @@
 <h1>Edit <%= @ride_name %> Ride</h1>
 
-<%= form_tag rides_path do %>
+<%= form_tag ride_path(id: @ride_name), method: :put do %>
   Imagine an edit ride form here.
   <br><br>
   <%= submit_tag 'Save Ride' %>

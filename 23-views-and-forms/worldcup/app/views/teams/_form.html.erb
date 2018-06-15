@@ -1,0 +1,18 @@
+
+<%= form_for given_team do |form_helper| %>
+
+  <p>
+    <%= form_helper.label :country %>
+    <%= form_helper.text_field :country %>
+  </p>
+
+  <p>
+    <%= form_helper.label :group %>
+    <%= form_helper.text_field :group %>
+  </p>
+
+  <p>
+    <%= form_helper.submit %>
+  </p>
+
+<% end %>

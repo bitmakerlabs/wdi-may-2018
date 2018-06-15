@@ -5,7 +5,7 @@ class RidesController < ApplicationController
   end
 
   def index
-    @rides = { lorem: lorem_ride, bacon: bacon_ride, hodor: game_of_thrones_ride }
+    @rides = { lorem: lorem_ride, bacon: bacon_ride, hodor: game_of_thrones_ride, "5" => "55555" }
   end
 
   def new
@@ -23,7 +23,8 @@ class RidesController < ApplicationController
 
   def update
     # Code to update the ride
-    redirect_to rides_path
+    @ride_name = params[:id]
+    redirect_to ride_path(id: @ride_name)
   end
 
   def destroy
@@ -32,6 +33,8 @@ class RidesController < ApplicationController
   end
 
   def get_name_and_description
+    # http://localhost:3000/rides/lorem
+
     @ride_name = params[:id]
 
     @description =
@@ -42,6 +45,8 @@ class RidesController < ApplicationController
           bacon_ride
         when 'hodor'
           game_of_thrones_ride
+        when '5'
+          '55555'
         else
           "Sorry, we don't have that ride."
         end
