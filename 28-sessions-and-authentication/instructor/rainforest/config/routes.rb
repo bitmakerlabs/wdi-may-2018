@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  root 'products#index'
   resources :products, only: :index
   resource  :users, only: %i(new create)
 
