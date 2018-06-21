@@ -1,0 +1,16 @@
+submitted_email    = params[:email]
+submitted_password = params[:password]
+
+u = User.find_by(email: submitted_email)
+
+class User
+  def authenticate(submitted_password)
+    hash(submitted_password, password_digest[0..3]) == password_digest[4..-1]
+  end
+end
+
+if u.authenticate(submitted_password)
+  # Access Granted
+else
+  # ACCESS DENIED
+end
