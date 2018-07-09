@@ -5,17 +5,18 @@ class MonstersController < ApplicationController
     respond_to do |format|
       format.html
       format.text
+      # format.json do
+      #   render json: @monsters, except: [:id, :created_at, :updated_at]
+      # end
+
       format.json do
-        render json: @monsters.map { |monster|
-          { full_name: monster.name,
-            location: monster.home,
-            creepiness: monster.creepiness
-          }
-        }
+        altered_monsters = @monsters.map do |monster|
+          monster.to_json
+        end
+
+        render json: altered_monsters
       end
     end
 
   end
 end
-
-
