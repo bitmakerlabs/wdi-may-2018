@@ -1,0 +1,18 @@
+<h2>Recommendation:</h2>
+
+<p>
+<% if @drink %>
+  <h1>We think <i><%= @drink['name'] %></i> would go nicely with <i><%= @book['title'] %></i></h1>
+<% else %>
+  We couldn't find a drink suggestion for <%= @book['title'] %>. We suggest you enjoy that book sober.
+<% end %>
+</p>
+
+<%= image_tag(@drink_image_url) if @drink_image_url %>
+<%= image_tag(@book_image_url) %>
+
+<br>
+<br>
+<br>
+
+<h3><%= link_to 'Try Again', root_path %></h3>

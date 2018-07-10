@@ -1,14 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Floats and Positioning</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <script src="slides.js"></script>
+    <style type="text/css">
+
+      @import url(slides.css);
+
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
 ## *Today's Lesson*
 
 # Working with APIs
 
 Today we will learn how to work with various RESTful APIs, and how to build our own.
 
+---
+
+
 ## Agenda
 
-### Introduction                                    <small>(15 min)</small>
-### Building a Book and Drink Recommender with Ruby <small>(55 min)</small>
-### Integrating our Recommender into Rails          <small>(remaining time)</small>
+### Introduction                                    .agenda-time[(15 min)]
+### Building a Book and Drink Recommender with Ruby .agenda-time[(55 min)]
+### Integrating our Recommender into Rails          .agenda-time[(remaining time)]
+
+---
+
 
 # Topics Covered
 
@@ -22,6 +43,9 @@ Today we will learn how to work with various RESTful APIs, and how to build our 
 - Building an API
 - Caching API Results
 
+---
+
+
 # Goals:
 
 To learn how to:
@@ -30,29 +54,52 @@ a) Work with APIs within a web application
 
 b) Build our own API
 
+---
+
+
 # What is an API?
 
 <b>A</b>pplication
 <b>P</b>rogramming
 <b>I</b>nterface
 
+--
+
 A way for software to interact with a system programmatically
+
+--
 
 API is a broad, general term, and can range from interacting with:
 
 - a ruby `String` class (i.e. with the methods `length` and `reverse`)
 
+--
+
 - the Rails framework (this is why the Rails documentation is at http://API.rubyonrails.org/)
+
+--
 
 - a website with an application we've built<br>(which is what we'll be focusing on today)
 
+---
+
+
 # Why APIs?
+
+--
 
 Make it easy to interact with a website (as opposed to *web scraping*)
 
+--
+
 Most applications built today use a variety of APIs, and you're encouraged to use them for your final project.
 
+--
+
 Often the best final projects combine a few APIs in a new and novel way.
+
+---
+
 
 # Why APIs?
 
@@ -65,11 +112,17 @@ Most major entities on the Internet offer an API to consume their data and servi
 - sell data
 - share data ([Open Data Toronto](https://www.toronto.ca/city-government/data-research-maps/open-data/))
 
+---
+
+
 # What are some APIs?
 
 - https://lcboapi.com/
 
 - https://developer.nytimes.com/
+
+---
+
 
 # How to consume APIs
 
@@ -80,6 +133,9 @@ Most major entities on the Internet offer an API to consume their data and servi
   - general (e.g. Net::Http, HTTParty)
   - API specific (e.g. twitter gem)
 
+---
+
+
 # Endpoint
 
 *A unique URL that represents an object or collection of objects*
@@ -89,6 +145,9 @@ Most major entities on the Internet offer an API to consume their data and servi
 https://lcboapi.com/docs
 
 https://developer.nytimes.com/books_api.json
+
+---
+
 
 # Complexity
 
@@ -102,11 +161,17 @@ Range from:
 
 - OAuth combined with continual key refreshing
 
+---
+
+
 # Postman
 
 https://www.getpostman.com/
 
 - try: lcboapi.com/products
+
+---
+
 
 # Curl
 
@@ -114,11 +179,17 @@ https://www.getpostman.com/
 > curl lcboapi.com/products
 ```
 
+---
+
+
 # HTTParty
 
 - install
 
 - try: lcboapi.com/products
+
+---
+
 
 # Book and Drink Recommender
 
@@ -128,47 +199,92 @@ https://www.getpostman.com/
 
 - demo ruby and rails app
 
+---
+
+
 # NYT Book Lists
+
+--
 
 - get NYT API key
 
+--
+
 - make request for all lists
+
+--
 
 - display lists
 
+--
+
 - have user select single list
+
+---
+
 
 # NYT Books on a List
 
+
+--
+
 - make request for books on a list
+
+--
 
 - display books
 
+--
+
 - have user select a book
+
+---
+
 
 # NYT Book
 
 - make request for single book
 
+---
+
+
 # Drink
 
 - split book summary into words and sort by longest to shortest
 
+--
+
 - make a product search request to LCBO API for each word until one is found
 
+--
+
 - display recommendation
+
+---
+
 
 # Prep for Rails
 
 - move logic into a class
 
+--
+
 - remove input / output functionality (as this will be handled through a web interface)
+
+--
 
 - move key to environment variable
 
+--
+
   - very important, especially working with APIs that involve you putting your credit card in
 
+--
+
   - don't check unencrypted keys into a git repo - bots crawl github looking for keys (for example, the spin up servers for spamming or cryptocurrency mining)
+
+---
+
 
 # Rails App
 
@@ -178,11 +294,17 @@ https://www.getpostman.com/
 
 - create a `recommender` controller
 
+---
+
+
 # Book Lists
 
 - route
 - controller action
 - view
+
+---
+
 
 # Books based on List
 
@@ -190,11 +312,17 @@ https://www.getpostman.com/
 - controller action
 - view
 
+---
+
+
 # Drink Recommendation
 
 - route
 - controller action
 - view
+
+---
+
 
 # Caching results
 
@@ -202,11 +330,16 @@ https://www.getpostman.com/
 
   - lists
 
+--
+
 - with database:
 
   - books on list
   - book
   - drink
+
+---
+
 
 # Turning our App into an API
 
@@ -234,10 +367,21 @@ curl --request GET \
      localhost:3000/recommender/recommendation
 ```
 
+---
+
+
 # Wrap Up
 
 - Questions?
 
+--
+
 - Today's Assignments
 
+--
+
 ## Thanks!
+    </textarea>
+
+  </body>
+</html>

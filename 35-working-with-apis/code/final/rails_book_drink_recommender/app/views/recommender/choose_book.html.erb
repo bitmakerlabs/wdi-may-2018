@@ -1,0 +1,10 @@
+<h1>Pleases select book:</h1>
+
+<% @books.each do |book| %>
+  <% title = book['book_details'].first['title'] %>
+  <% isbn  = book['isbns'].first&.values&.first %>
+  <% if isbn %>
+    <%= link_to title, recommender_recommendation_path(isbn: isbn) %>
+    <br>
+  <% end %>
+<% end %>

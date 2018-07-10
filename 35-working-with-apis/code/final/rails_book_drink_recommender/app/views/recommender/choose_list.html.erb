@@ -1,0 +1,6 @@
+<h1>Pleases select list:</h1>
+
+<% @lists.each do |list| %>
+  <%= link_to list['display_name'], recommender_choose_book_path(list: list['list_name_encoded']) %>
+  <br>
+<% end %>
