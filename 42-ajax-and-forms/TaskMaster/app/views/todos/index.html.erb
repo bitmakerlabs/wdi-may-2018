@@ -1,0 +1,18 @@
+<h1>Todos</h1>
+<%= link_to  "Add todo", new_todo_path %>
+
+<% if @todos.any? %>
+
+<ul id= "taskList">
+<% @todos.each do |todo| %>
+       <%= render  partial: "content" , locals:{todo: todo} %> 
+<%end%>
+</ul>
+<%else%>
+
+<p> Do something !!</p>
+
+<% end%>
+
+
+<%= render  partial: "form" %>
